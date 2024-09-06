@@ -1,0 +1,122 @@
+/* Importa a fonte Bebas Neue do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+html {
+    /* Tamanho base da fonte para toda a página */
+    font-size: 16px;
+}
+
+body {
+    /* Define a fonte principal */
+    font-family: Bebas Neue;
+    /* Remove margens */
+    margin: 0;
+    /* Centraliza o texto por padrão */
+    text-align: center;
+    /* Define o fundo degradê */
+    background: radial-gradient(circle at center, #f0e68c, #ffd700);
+}
+
+.pesquisa {
+    /* Largura da caixa de pesquisa */
+    width: 25rem;
+    /* Define a margem superior e centraliza horizontalmente */
+    margin: 3.125rem auto;
+    /* Organiza o conteúdo em coluna */
+    display: flex;
+    /* Alinha o conteúdo verticalmente ao centro */
+    flex-direction: column;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+}
+
+.input-pesquisa {
+    /* Ocupa toda a largura disponível dentro do container */
+    width: 100%;
+    /* Define a altura do campo de pesquisa */
+    height: 2.5rem;
+    /* Remove a borda padrão */
+    border: none;
+    /* Cria bordas arredondadas */
+    border-radius: 25px;
+    /* Adiciona espaçamento interno entre o texto e a borda */
+    padding: 0.625rem;
+    /* Define o tamanho da fonte */
+    font-size: 1rem;
+    /* Cria uma sombra leve abaixo do campo de pesquisa para um efeito de profundidade */
+    box-shadow: 0px 0.125rem 0.3125rem rgba(0, 0, 0, 0.3);
+}
+
+.botao-pesquisa {
+    /* Define a largura do botão como 30% da largura do container */
+    width: 30%;
+    height: 2rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff0000;
+    color: #ffff;
+    font-size: 1rem;
+    /* Indica que o botão é clicável */
+    cursor: pointer;
+    margin-top: 0.625rem;
+    /* Cria uma sombra abaixo do botão para um efeito de elevação */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    /* Aplica uma transição suave para todas as propriedades do botão, criando um efeito de animação quando o mouse passa sobre ele */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Seleciona o botão quando o mouse passa sobre ele */
+.botao-pesquisa:hover {
+    /* Altera a sombra e a posição do botão quando o mouse passa sobre ele, criando um efeito de interação */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+/* Define o layout dos resultados como uma flexbox, organizando os cards em uma linha e permitindo que eles quebrem para novas linhas se necessário */
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estiliza cada card com largura, altura, bordas, padding, margem, fundo degradê, sombra e arredondamento */
+.resultados {
+    align-content: center;
+    width: 30rem;
+    height: 15rem;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 5px;
+    background: radial-gradient(circle at center, #67affc, #007bff);
+    border-radius: 10px;
+    box-shadow: 0, 2px, 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estiliza os títulos e parágrafos dentro dos cards com tamanho de fonte, margem e cor */
+.resultados h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.resultados p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.resultados p.episodio {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    color: #ffd700;
+}
+
+/* Remove o sublinhado do link */
+#github {
+    text-decoration: none;
+}
+
+/* Muda a cor do link para vermelho quando o mouse passa sobre ele */
+#github:hover {
+    color: #ff0000; /* Cor desejada ao passar o mouse */
+}
