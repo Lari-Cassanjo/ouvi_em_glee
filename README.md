@@ -1,4 +1,5 @@
 ## Eu ouvi em Glee!
+Acesse o site: `https://ouvi-em-glee.vercel.app/`
 
 **Uma homenagem à minha série musical favorita!**
 
